@@ -1,0 +1,157 @@
+\section{Härledning}
+Vi utgår från bilden i labbinstruktionen. Där har man två tunna stänger med en fjäder emellan i punkterna $P_1,P_2$. Tillsammans med objektet längst ut har pendlarna ett tröghetsmoment kring $O$ som $I_0$, och ett masscentrum i $C_1,C_2$. Eftersom pendlarna inte har någon rörelse relativt $O$ så blir den totala kinetiska energin \begin{equation}
+    T = \frac{1}{2}I_0 \dot{\phi}^2 + \frac{1}{2}I_0 \dot{\theta}^2 = \frac{I_0}{2}(\dot{\phi}+\dot{\theta})
+\end{equation}
+Den potentiella energin ges från gravitationen och fjädern. För det krävs positionerna av punkterna.
+\begin{align}
+    \vb r_{P1} &= l (\sin\phi\iunit-\cos\phi\junit)\\
+    \vb r_{P2} &= l (\sin\theta\iunit-\cos\theta\junit)\\
+    \vb r_{C1} &= L (\sin\phi\iunit-\cos\phi\junit)\\
+    \vb r_{C2} &= L (\sin\theta\iunit-\cos\theta\junit)\\
+\end{align}
+relativt respektive punkt $O$ för varje pendel. Därefter kan gravitationspotentialen skrivas som \begin{align}
+    U_W &= mg \vb r_{C1}(1-\cdot \junit) + mg \vb(1- r_{C2}\cdot \junit)\\
+    &=mgL(2-\cos\phi-\cos\theta)
+\end{align}
+Fjädern antas ha jämviktsläge när pendlarna är rakt ner, det vill säga när vinklarna är 0. Därmed blir \begin{align}
+    U_{\textrm{fjäder}} &= \frac{1}{2}k(\vb r_{P1}-\vb r_{P2})^2 \\ &= \frac{kl^2}{2}(\sin^2\theta+\sin^2\phi+\cos^2\theta+\cos^2\phi-\sin\theta\sin\phi-\cos\theta\cos\phi)\\
+    &=\frac{kl^2}{2}\cos(\theta-\phi)
+\end{align}
+Tillsammans blir den potentiella energin då \begin{equation}
+    U = kl^2(1-\cos(\theta-\phi)) + mgL(2-\cos\phi-\cos\theta)
+\end{equation}
+Vilket ger Lagrangianen \begin{equation}
+    L = T-U = \frac{I_0}{2}(\dot{\phi}^2+\dot{\theta}^2) - kl^2(1\cos(\theta-\phi)) -mgL(2-\cos\phi-\cos\theta)
+\end{equation}
+Redan här antar vi små svängningar, och approximerar $\sin,\cos$ till ledande ordning 2. Det innebär att \begin{equation}
+    \sin x = x,\quad \cos x = 1-\frac{x^2}{2}
+\end{equation}
+med högre ordningens termer försummade. Det innebär att Lagrangianen blir \begin{equation}
+    L = \frac{I_0}{2}(\dot{\phi}^2+\dot{\theta}^2)+ \frac{kl^2}{2}(\theta-\phi)^2-\frac{mgL}{2}(\theta^2+\phi^2)
+\end{equation}
+Rörelseekvationerna blir då \begin{align}
+    \der{}{t}\pd{L}{\dot{\theta}}-\pd{L}{\theta} = 0 = I\ddot{\theta}+mgL\theta+kl^2(\theta-\phi) \label{eq:rörekv theta}\\
+    \der{}{t}\pd{L}{\dot{\phi}}-\pd{L}{\phi} = 0 = I\ddot{\phi}+mgL\phi+kl^2(\phi-\theta) \label{eq:rörekv phi}
+\end{align}
+Detta ser ut som kopplade svängningar. Vi gör ansatsen att \begin{equation}
+    \begin{pmatrix}
+        \theta\\\phi
+    \end{pmatrix} = \begin{pmatrix}
+        A\\B
+    \end{pmatrix}e^{i\omega t}
+\end{equation}
+Vilket insatt i (\ref{eq:rörekv theta}), (\ref{eq:rörekv phi}) (samt förkortat med exponentialen) ger \begin{align}
+    \begin{cases}
+        0 = (-I\omega^2+mgL+kl^2)A-{kl^2}B \\
+        0 = (-I\omega^2+mgL+kl^2)B-{kl^2}A
+    \end{cases}
+    \label{eq:rörelse efter ansats}
+\end{align}
+Vilket är ekvivalent med det linjära ekvationssystemet \begin{equation}
+    \begin{pmatrix}
+        -I\omega^2+mgL+kl^2 & -kl^2 \\
+        -kl^2  &-I\omega^2+mgL+kl^2 
+    \end{pmatrix} \begin{pmatrix}
+        A\\B
+    \end{pmatrix} = 0
+\end{equation}
+Söker icke-triviala lösningar. Det ges när determinanten av matrisen är 0, vilket innebär att \begin{align}
+    \det \begin{pmatrix}
+        -I\omega^2+mgL+kl^2 & -kl^2 \\
+        -kl^2  &-I\omega^2+mgL+kl^2 
+    \end{pmatrix} &= 0 \\
+    (-I\omega^2+mgL+kl^2)^2-(kl^2)^2 &= 0\\
+    I^2\omega^4-2I\omega^2(mgL+kl^2)+(mgL+kl^2)^2-k^2l^4 &=0\\
+    %I^2\omega^4+2I\omega^2(mgL+kl^2)+(mgL)^2+2mgLkl^2+k^2l^4-k^2l^4&=0\\
+    %I^2\omega^4+2I\omega^2(mgL+kl^2)+(mgL)^2+2mgLkl^2 &= 0
+\end{align}
+Använder PQ-formeln för att lösa för $\omega$:
+\begin{align}
+    \omega^2 &= mgL+kl^2 \pm \frac{1}{I}\sqrt{ (mgL+kl^2)^2-(mgL+kl^2)^2 + k^2l^4 }\\
+    &= \frac{mgL+kl^2\pm kl^2}{I} 
+\end{align}
+Det vill säga, vi har egenfrekvenserna \begin{equation}
+    \omega_1^2 = \frac{mgL}{I}, \quad  \omega_2^2 = \frac{mgL+2kl^2}{I}
+\end{equation}
+Vilket ger den allmänna lösningen 
+\begin{equation}
+    \begin{cases}
+        \theta(t) = A_1^+e^{i\omega_1t}+A_1^-e^{-i\omega_1t}+A_2^+e^{i\omega_2t}+A_2^-e^{-i\omega_2t}\\
+        \phi(t) = B_1^+e^{i\omega_1t}+B_1^-e^{-i\omega_1t}+B_2^+e^{i\omega_2t}+B_2^-e^{-i\omega_2t}
+    \end{cases}
+\end{equation}
+Denna lösning har dubbelt så många konstanter som förväntat för två stycken andra ordningens differentialekvationer. Vi hittar beroendet mellan kosntanterna genom insättning i (\ref{eq:rörelse efter ansats}). Börjar med $\omega_1$:
+\begin{equation}
+    \begin{cases}
+        0 = (-mgL+mgL+kl^2)A_1^\pm-{kl^2}B_1^\pm \\
+        0 = (-mgl+mgL+kl^2)B_1^\pm-{kl^2}A_1^\pm
+    \end{cases}
+\end{equation}
+Vilket ger att \begin{equation}
+    A_1^\pm = B_1^\pm
+\end{equation}
+Därefter, $\omega_2$: \begin{equation}
+    \begin{cases}
+        0 = (-mgL-2kl^2+mgL+kl^2)A_2^\pm-{kl^2}B_2^\pm \\
+            0 = (-mgl-2kl^2+mgL+kl^2)B_2^\pm-{kl^2}A_2^\pm
+    \end{cases}
+\end{equation}
+vilkt innebär att \begin{equation}
+    A_2^\pm = -B_2^\pm
+\end{equation}
+och den allmänna lösningen reduceras till \begin{equation}
+    \begin{cases}
+        \theta(t) = A_1^+e^{i\omega_1t}+A_1^-e^{-i\omega_1t}+A_2^+e^{i\omega_2t}+A_2^-e^{-i\omega_2t}\\
+        \phi(t) = A_1^+e^{i\omega_1t}+A_1^-e^{-i\omega_1t}-A_2^+e^{i\omega_2t}-A_2^-e^{-i\omega_2t}
+    \end{cases}
+\end{equation}
+%\printbibliography
+Genom kombinering kan vi skapa systemets normalkoordinater: \begin{align}
+    q_1(t) &= \theta(t)+\phi(t) = 2A_1^+ e^{i\omega_1t} +2A_1^-e^{i\omega_1 t}\\
+    q_2(t) &= \theta(t)-\phi(t) = 2A_2^+ e^{i\omega_2t} +2A_2^-e^{i\omega_2 t}
+\end{align}
+Vilka uppfyller ekvationen för harmoniska oscillatorer med respektive egenfrekvens: \begin{equation}
+    \ddot{q}_i+\omega_i^2 q_i = 0
+\end{equation}
+Omvandling tillbaka till $\theta,\phi$ går man baklänges: \begin{align}
+    \theta(t) = \frac{1}{2}(q_1+q_2)\\
+    \phi(t) = \frac{1}{2}(q_1-q_2)
+\end{align}
+Vi söker reella lösningar för alla tidssteg. Utveckling av exponentialen ger då att \begin{equation}
+    q_i(t) = 2\left( \cos(\omega_i t)(A_i^++A_i^-)+i\sin(\omega_i t)(A_i^+-A_i^-) \right),
+\end{equation}
+vilket innebär att konstanterna måste vara varandras komplexa konjugat. Notera att $i$ betecknar både index och komplexa talet ovan. Det ger oss nya definitioner av $q_1,q_2$: 
+\begin{align}
+    q_1 = C_{11}\sin \omega_1 t + C_{12} \cos \omega_1 t\\
+    q_2= C_{21}\sin \omega_2 t + C_{22}\cos \omega_2 t
+\end{align}
+där
+\begin{equation}
+    C_{i1} = 2(A_i^+ + A_i^-),\quad C_{i2} = 2(A_i^+-A_i^-)
+\end{equation}
+
+\subsection{Fall A}
+Här släpps båda pendlarna med samma vinkel $\alpha$ åt samma håll. Det innebär alltså att fjädern inte har någon påverkan. Därmed har vi endast oscillation i frekvens $\omega_1$. Rörelseekvationen beskrivs då endast av $q_1(t)$. Insättning av begynnelsevillkoret ger då att \begin{equation}
+    \theta(0)=\phi(0) = C_{12} = \alpha
+\end{equation}
+Det vill säga, vi har en ren cosinusrörelse i båda pendlarna.
+
+\subsection{Fall B}
+I detta fallet släpps det från motsatt håll, vilket innebär att vi har egenfrekvensen $\omega_2$ som enda bidraget, dvs. \begin{equation}
+    \theta(t)=-\phi(t) = q_2(t)
+\end{equation}
+Insättning av begynnelsevärde ger då igen att \begin{equation}
+    \theta(0)=\alpha=-\phi(0) = C_{22}
+\end{equation}
+Igen har vi en ren cosinusrörelse i systemet.
+
+\subsection{Fall C}
+I fall C har vi en superpoosition av egenfunktionerna. Begynnelsevärdena är $\theta(0)=0, \phi(0)=-\alpha$. Använder vi uttrycken för $\theta,\phi$ ovan får man då att \begin{equation}
+    \begin{cases}
+        \frac{1}{2}(C_{12}-C_{22})&=-\alpha\\
+        \frac{1}{2}(C_{12}+C_{22})&=0
+    \end{cases}
+\end{equation}
+Vilket har den unika lösningen \begin{equation}
+    C_{12} = -\alpha, \quad C_{22} = \alpha
+\end{equation}
