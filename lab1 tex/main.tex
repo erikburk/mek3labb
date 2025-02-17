@@ -8,11 +8,11 @@
 \usepackage{mathtools,graphicx,url,amsmath, tikz, csquotes, biblatex, upgreek, newtxtext, newtxmath, tcolorbox, wrapfig, physics}
 
 % Gör en mapp som heter bilder och lägg sedan in alla bilder där för att använda nedan.
-%\graphicspath{{./bilder/}}
+\graphicspath{{./bilder/}}
 
 % Numrera i varje sektion, kommentera ut för att bli av med det.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
+%\numberwithin{equation}{section}
+%\numberwithin{figure}{section}
 \newcounter{excount}
 \counterwithin{excount}{section}
 \setcounter{excount}{0}
@@ -73,7 +73,7 @@
     \end{wrapfigure}}
 
 % kommentera ut för att använda.
-%\addbibresource{referenser.bib}
+\addbibresource{referenser.bib}
 
 \title{Mekanik III - Labbrapport}
 \author{Erik Björk, Jakob Dahlgren}
@@ -95,7 +95,7 @@
 \include{resultat}
 \include{diskussion}
 \include{slutsats}
-
+\printbibliography
 \appendix
-\include{härledning}
+%\include{härledning}
 \end{document}

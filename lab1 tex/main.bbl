@@ -1,0 +1,59 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{nordling_physics_2021}{book}{}
+      \name{author}{2}{}{%
+        {{hash=99e0ead5b129cf84b6ab0e03d4462998}{%
+           family={Nordling},
+           familyi={N\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9f6d06cbd8c0ad03149b4be7d5a53b95}{%
+           family={Österman},
+           familyi={Ö\bibinitperiod},
+           given={Jonny},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lund}%
+      }
+      \list{publisher}{1}{%
+        {Studentlitteratur}%
+      }
+      \strng{namehash}{9e0e90b58b9ac056923adf03d6e79f76}
+      \strng{fullhash}{9e0e90b58b9ac056923adf03d6e79f76}
+      \strng{bibnamehash}{9e0e90b58b9ac056923adf03d6e79f76}
+      \strng{authorbibnamehash}{9e0e90b58b9ac056923adf03d6e79f76}
+      \strng{authornamehash}{9e0e90b58b9ac056923adf03d6e79f76}
+      \strng{authorfullhash}{9e0e90b58b9ac056923adf03d6e79f76}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{isbn}{978-91-44-12806-1}
+      \field{title}{Physics {Handbook} for {Science} and {Engineering}}
+      \field{year}{2021}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
