@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1739370195.44505 "main.bcf" "main.bbl" "main" 1739791931.45776 0
-  "main.bcf" 1739791931.17322 107256 2ba63a8b94c9e89d5ce4df5bd50a0764 "pdflatex"
+["biber main"] 1739370195.44505 "main.bcf" "main.bbl" "main" 1739792101.57814 0
+  "main.bcf" 1739792101.29758 107256 2ba63a8b94c9e89d5ce4df5bd50a0764 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1739791929.25014 "/home/erikburk/Skola/Mekanik III/labbar/lab1 tex/main.tex" "main.pdf" "main" 1739791931.45831 0
+["pdflatex"] 1739792099.71414 "/home/erikburk/Skola/Mekanik III/labbar/lab1 tex/main.tex" "main.pdf" "main" 1739792101.57884 0
   "/home/erikburk/Skola/Mekanik III/labbar/lab1 tex/main.tex" 1739791843.29263 2662 06c0b6dbfd6e780dd8911f73792ecb9d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -226,26 +226,26 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1721433600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1734092553.65518 567931 464ffaeaadd18367714f214e0756e7e0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1734092536 7572219 afd33fb47e280c47c199fba77710633c ""
-  "diskussion.aux" 1739791931.07122 3949 4b32947076be4150abd216d6d6c72a0e "pdflatex"
+  "diskussion.aux" 1739792101.22058 3949 4e36a6572f6138be6f47abd4cf2521bf "pdflatex"
   "diskussion.tex" 1739791551.67409 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "härledning.aux" 1739791931.15222 4612 1c97baa20401c4b304123d5e570dd107 "pdflatex"
+  "härledning.aux" 1739792101.28258 4613 ea49992185c0aa2659d7bae92dffc2fa "pdflatex"
   "härledning.tex" 1739791456.83964 7911 8860db827adb37ede38e10d8ca10fc63 ""
-  "inledning.aux" 1739791931.06022 4054 b4326a8b7f845f3bfc7f06d72b23e8a3 "pdflatex"
+  "inledning.aux" 1739792101.20758 4054 b4326a8b7f845f3bfc7f06d72b23e8a3 "pdflatex"
   "inledning.tex" 1739791928.84926 108 4689a928826bbf468f33def2146e0b25 ""
-  "main.aux" 1739791931.15522 917 205f84d6b8218c009e34361bd09ba490 "pdflatex"
+  "main.aux" 1739792101.28458 917 6866138c90be31638ea11d65c6bd52c5 "pdflatex"
   "main.bbl" 1739370196.72188 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1739791931.16522 458 f50d1ef107831f01cad37802e06a6dc4 "pdflatex"
-  "main.run.xml" 1739791931.17522 2224 44970934187c58c2ec73753cafb01f01 "pdflatex"
+  "main.out" 1739792101.29158 526 c45769c4a9a72cb1a9e5386e442c9ec6 "pdflatex"
+  "main.run.xml" 1739792101.30058 2224 44970934187c58c2ec73753cafb01f01 "pdflatex"
   "main.tex" 1739791843.29263 2662 06c0b6dbfd6e780dd8911f73792ecb9d ""
-  "main.toc" 1739791931.17522 379 b2e34d5ca4919064cb697f90d77aa62d "pdflatex"
-  "metod.aux" 1739791931.06622 3944 847980edb84da5c5331b20bb59c87c6a "pdflatex"
+  "main.toc" 1739792101.30058 440 1c72260865289dc3d8e526e114c8f1bc "pdflatex"
+  "metod.aux" 1739792101.21458 3944 e370c702ad286e7aa7380db26a9ad13f "pdflatex"
   "metod.tex" 1739791542.70823 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "resultat.aux" 1739791931.06822 3947 7f49df46461cf6341cd165ffc49a464c "pdflatex"
+  "resultat.aux" 1739792101.21758 3947 1f3a08ca5eef30c4c86a5a167fbf511c "pdflatex"
   "resultat.tex" 1739791547.82715 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "slutsats.aux" 1739791931.07422 3947 69b67da146d412943815b5106f711701 "pdflatex"
+  "slutsats.aux" 1739792101.22258 3947 1a87f6d8a023528b9720f3a07ce0a629 "pdflatex"
   "slutsats.tex" 1739791559.51597 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "teori.aux" 1739791931.06322 3944 a2e30ca7e354eecdef3fb16415bfcd98 "pdflatex"
-  "teori.tex" 1739791538.0893 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "teori.aux" 1739792101.21258 4046 7996afa0b55b2636039e1a93507daff2 "pdflatex"
+  "teori.tex" 1739792097.20564 16 f9e2a7e719078b4242324bd623044242 ""
   (generated)
   "diskussion.aux"
   "härledning.aux"
